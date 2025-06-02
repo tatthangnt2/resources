@@ -1,0 +1,1252 @@
+{
+  "aat-task": "1.0",
+  "status": 1,
+  "expired": "2025-06-07T05:28:40.901Z",
+  "mainTaskId": "67ed2cde1384f859ed81bfca",
+  "conditions": {
+    "67ed2cde1384f859ed81bf97": {
+      "title": "Nhấn mũi tên quay về",
+      "desc": "Trường hợp hiện thông báo, quảng cáo, trang không có nút đóng (X) thì nhấn quay về",
+      "groupId": "67ed2cde1384f859ed81bf95",
+      "deviceId": "",
+      "steps": [
+        {
+          "action": 2,
+          "title": "Nhấn nút Back ở góc trái trên cùng",
+          "desc": "",
+          "value": {
+            "x": 0.1,
+            "y": 0.07
+          },
+          "failed": "",
+          "success": "",
+          "order": "1",
+          "_id": "67ed2cde1384f859ed81bf98"
+        }
+      ],
+      "repeat": 0,
+      "repeatWhenFailed": 0,
+      "order": "1",
+      "_id": "67ed2cde1384f859ed81bf97",
+      "__v": 0
+    },
+    "67ed2cde1384f859ed81bf9a": {
+      "title": "Đợi 20s",
+      "desc": "",
+      "groupId": "67ed2cde1384f859ed81bf95",
+      "deviceId": "",
+      "steps": [
+        {
+          "action": 0,
+          "title": "",
+          "desc": "",
+          "value": 20,
+          "failed": "",
+          "success": "",
+          "order": "1",
+          "_id": "67ed2cde1384f859ed81bf9b"
+        }
+      ],
+      "repeat": 0,
+      "repeatWhenFailed": 0,
+      "order": "1",
+      "_id": "67ed2cde1384f859ed81bf9a",
+      "__v": 0
+    },
+    "67ed2cde1384f859ed81bf9d": {
+      "title": "[Tiktok] Xem video và thả tim",
+      "desc": "",
+      "groupId": "67ed2cde1384f859ed81bf95",
+      "deviceId": "",
+      "steps": [
+        {
+          "action": 0,
+          "title": "Xem video",
+          "desc": "",
+          "value": 15,
+          "failed": "",
+          "success": "",
+          "order": "1",
+          "_id": "67ed2cde1384f859ed81bf9e"
+        },
+        {
+          "action": 5,
+          "title": "Tìm và đóng thông báo",
+          "desc": "",
+          "value": {
+            "repeat": 1,
+            "keywords": [
+              {
+                "title": "Đóng thông báo có dấu x (nếu có)",
+                "desc": "",
+                "value": "x",
+                "success": "",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"後で\" (nếu có)",
+                "desc": "Điểm danh xong có hiện thông báo này",
+                "value": "後で",
+                "success": "",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"条のギフト\" (nếu có)",
+                "desc": "Sụ kiện xuất hiện ngày 06/03/2025",
+                "value": "条のギフト",
+                "success": "67ed2cde1384f859ed81bf97",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"争奪戦を\" (nếu có)",
+                "desc": "Sụ kiện xuất hiện ngày 06/03/2025",
+                "value": "争奪戦を",
+                "success": "67ed2cde1384f859ed81bf97",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"ランキングで勝ち抜く\" (nếu có)",
+                "desc": "Sụ kiện xuất hiện ngày 06/03/2025",
+                "value": "ランキングで勝ち抜く",
+                "success": "67ed2cde1384f859ed81bf97",
+                "failed": ""
+              }
+            ]
+          },
+          "failed": "",
+          "success": "",
+          "order": "2",
+          "_id": "67ed2cde1384f859ed81bf9f"
+        },
+        {
+          "action": 3,
+          "title": "Thả tim",
+          "desc": "",
+          "value": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "failed": "",
+          "success": "",
+          "order": "3",
+          "_id": "67ed2cde1384f859ed81bfa0"
+        },
+        {
+          "action": 0,
+          "title": "",
+          "desc": "",
+          "value": 3,
+          "failed": "",
+          "success": "",
+          "order": "4",
+          "_id": "67ed2cde1384f859ed81bfa1"
+        },
+        {
+          "action": 4,
+          "title": "Sang video tiếp theo",
+          "desc": "",
+          "value": [
+            {
+              "x": 0.5,
+              "y": 0.8
+            },
+            {
+              "x": 0.5,
+              "y": 0.2
+            }
+          ],
+          "failed": "",
+          "success": "",
+          "order": "5",
+          "_id": "67ed2cde1384f859ed81bfa2"
+        }
+      ],
+      "repeat": 6,
+      "repeatWhenFailed": 0,
+      "order": "1",
+      "_id": "67ed2cde1384f859ed81bf9d",
+      "__v": 0
+    },
+    "67ed2cde1384f859ed81bfa4": {
+      "title": "[Tiktok] Nhập và tìm kiếm",
+      "desc": "",
+      "groupId": "67ed2cde1384f859ed81bf95",
+      "deviceId": "",
+      "steps": [
+        {
+          "action": 0,
+          "title": "Đợi ẩn thông báo tìm kiếm",
+          "desc": "",
+          "value": 5,
+          "failed": "",
+          "success": "",
+          "order": "1",
+          "_id": "67ed2cde1384f859ed81bfa5"
+        },
+        {
+          "action": 5,
+          "title": "Tìm và đóng thông báo",
+          "desc": "",
+          "value": {
+            "repeat": 1,
+            "swipe": {
+              "action": 4,
+              "title": "Vuốt xuống dưới",
+              "desc": "",
+              "value": [
+                {
+                  "x": 0.5,
+                  "y": 0.6
+                },
+                {
+                  "x": 0.5,
+                  "y": 0.2
+                }
+              ],
+              "failed": "",
+              "success": ""
+            },
+            "keywords": [
+              {
+                "title": "Đóng thông báo có dấu x (nếu có)",
+                "desc": "",
+                "value": "x",
+                "success": "",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"後で\" (nếu có)",
+                "desc": "Điểm danh xong có hiện thông báo này",
+                "value": "後で",
+                "success": "",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"条のギフト\" (nếu có)",
+                "desc": "Sụ kiện xuất hiện ngày 06/03/2025",
+                "value": "条のギフト",
+                "success": "67ed2cde1384f859ed81bf97",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"争奪戦を\" (nếu có)",
+                "desc": "Sụ kiện xuất hiện ngày 06/03/2025",
+                "value": "争奪戦を",
+                "success": "67ed2cde1384f859ed81bf97",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"ランキングで勝ち抜く\" (nếu có)",
+                "desc": "Sụ kiện xuất hiện ngày 06/03/2025",
+                "value": "ランキングで勝ち抜く",
+                "success": "67ed2cde1384f859ed81bf97",
+                "failed": ""
+              }
+            ]
+          },
+          "failed": "",
+          "success": "",
+          "order": "2",
+          "_id": "67ed2cde1384f859ed81bfa6"
+        },
+        {
+          "action": 9,
+          "title": "Nhập từ khóa tìm kiếm",
+          "desc": "Để trống từ khóa để lấy ngẫu nhiên từ khoá trong kho từ khoá",
+          "value": "",
+          "failed": "",
+          "success": "",
+          "order": "3",
+          "_id": "67ed2cde1384f859ed81bfa7"
+        },
+        {
+          "action": 0,
+          "title": "",
+          "desc": "",
+          "value": 1,
+          "failed": "",
+          "success": "",
+          "order": "4",
+          "_id": "67ed2cde1384f859ed81bfa8"
+        },
+        {
+          "action": 2,
+          "title": "Nhấn tìm kiếm",
+          "desc": "",
+          "value": {
+            "x": 0.9,
+            "y": 0.07
+          },
+          "failed": "",
+          "success": "",
+          "order": "5",
+          "_id": "67ed2cde1384f859ed81bfa9"
+        },
+        {
+          "action": 0,
+          "title": "Xem video 30s",
+          "desc": "",
+          "value": 30,
+          "failed": "",
+          "success": "",
+          "order": "6",
+          "_id": "67ed2cde1384f859ed81bfaa"
+        },
+        {
+          "action": 2,
+          "title": "Nhấn vào ô tìm kiếm",
+          "desc": "",
+          "value": {
+            "x": 0.5,
+            "y": 0.07
+          },
+          "failed": "",
+          "success": "",
+          "order": "7",
+          "_id": "67ed2cde1384f859ed81bfab"
+        }
+      ],
+      "repeat": 6,
+      "repeatWhenFailed": 0,
+      "order": "1",
+      "_id": "67ed2cde1384f859ed81bfa4",
+      "__v": 0
+    },
+    "67ed2cde1384f859ed81bfad": {
+      "title": "[Tiktok] Xem và đóng quảng cáo",
+      "desc": "",
+      "groupId": "67ed2cde1384f859ed81bf95",
+      "deviceId": "",
+      "steps": [
+        {
+          "action": 0,
+          "title": "Xem quảng cáo",
+          "desc": "",
+          "value": 45,
+          "failed": "",
+          "success": "",
+          "order": "1",
+          "_id": "67ed2cde1384f859ed81bfae"
+        },
+        {
+          "action": 5,
+          "title": "Tìm và đóng thông báo",
+          "desc": "",
+          "value": {
+            "repeat": 1,
+            "keywords": [
+              {
+                "title": "Đóng thông báo có dấu x (nếu có)",
+                "desc": "",
+                "value": "x",
+                "success": "",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"後で\" (nếu có)",
+                "desc": "Điểm danh xong có hiện thông báo này",
+                "value": "後で",
+                "success": "",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"条のギフト\" (nếu có)",
+                "desc": "Sụ kiện xuất hiện ngày 06/03/2025",
+                "value": "条のギフト",
+                "success": "67ed2cde1384f859ed81bf97",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"争奪戦を\" (nếu có)",
+                "desc": "Sụ kiện xuất hiện ngày 06/03/2025",
+                "value": "争奪戦を",
+                "success": "67ed2cde1384f859ed81bf97",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"ランキングで勝ち抜く\" (nếu có)",
+                "desc": "Sụ kiện xuất hiện ngày 06/03/2025",
+                "value": "ランキングで勝ち抜く",
+                "success": "67ed2cde1384f859ed81bf97",
+                "failed": ""
+              },
+              {
+                "title": "Xử lý khi nhấn nhầm vào nút Ưu đãi",
+                "desc": "Nhấn nhầm vào nút ưu đãi ở góc trái bên phải (cùng vị trí với nút đóng quảng cáo) thì Thoát vòng lặp xem quảng cáo. Nếu bạn nhận được phiếu giảm giá hoặc phiếu quà tặng, nó sẽ được hiển thị ở đây (クーポンやギフト券を取得すると、ここに表示されます)",
+                "value": "まだオファーはありません",
+                "success": "",
+                "failed": ""
+              }
+            ]
+          },
+          "failed": "",
+          "success": "",
+          "order": "2",
+          "_id": "67ed2cde1384f859ed81bfaf"
+        },
+        {
+          "action": 0,
+          "title": "Đợi đóng quảng cáo",
+          "desc": "",
+          "value": 3,
+          "failed": "",
+          "success": "",
+          "order": "3",
+          "_id": "67ed2cde1384f859ed81bfb0"
+        },
+        {
+          "action": 5,
+          "title": "Xem quảng cáo tiếp theo (視聴する)",
+          "desc": "",
+          "value": {
+            "repeat": 1,
+            "keywords": [
+              {
+                "title": "Đóng thông báo có dấu x (nếu có)",
+                "desc": "",
+                "value": "x",
+                "success": "",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"後で\" (nếu có)",
+                "desc": "Điểm danh xong có hiện thông báo này",
+                "value": "後で",
+                "success": "",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"条のギフト\" (nếu có)",
+                "desc": "Sụ kiện xuất hiện ngày 06/03/2025",
+                "value": "条のギフト",
+                "success": "67ed2cde1384f859ed81bf97",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"争奪戦を\" (nếu có)",
+                "desc": "Sụ kiện xuất hiện ngày 06/03/2025",
+                "value": "争奪戦を",
+                "success": "67ed2cde1384f859ed81bf97",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"ランキングで勝ち抜く\" (nếu có)",
+                "desc": "Sụ kiện xuất hiện ngày 06/03/2025",
+                "value": "ランキングで勝ち抜く",
+                "success": "67ed2cde1384f859ed81bf97",
+                "failed": ""
+              },
+              {
+                "title": "[Tiktok] Xem quảng cáo tiếp theo (視聴する)",
+                "desc": "Nếu tìm thấy thì nhấn vào -> xem quảng cáo -> lặp lại cho đến khi hoàn thành nhiệm vụ",
+                "value": "視聴する",
+                "success": "",
+                "failed": "break"
+              }
+            ]
+          },
+          "failed": "",
+          "success": "",
+          "order": "4",
+          "_id": "67ed2cde1384f859ed81bfb1"
+        }
+      ],
+      "repeat": 30,
+      "repeatWhenFailed": 0,
+      "order": "1",
+      "_id": "67ed2cde1384f859ed81bfad",
+      "__v": 0
+    },
+    "67ed2cde1384f859ed81bfb3": {
+      "title": "[Tiktok] Xem video 15 phút",
+      "desc": "",
+      "groupId": "67ed2cde1384f859ed81bf95",
+      "deviceId": "",
+      "steps": [
+        {
+          "action": 0,
+          "title": "Xem video",
+          "desc": "",
+          "value": 30,
+          "failed": "",
+          "success": "",
+          "order": "1",
+          "_id": "67ed2cde1384f859ed81bfb4"
+        },
+        {
+          "action": 5,
+          "title": "Tìm và đóng thông báo",
+          "desc": "",
+          "value": {
+            "repeat": 1,
+            "swipe": {
+              "action": 4,
+              "title": "Vuốt xuống dưới",
+              "desc": "",
+              "value": [
+                {
+                  "x": 0.5,
+                  "y": 0.6
+                },
+                {
+                  "x": 0.5,
+                  "y": 0.2
+                }
+              ],
+              "failed": "",
+              "success": ""
+            },
+            "keywords": [
+              {
+                "title": "Đóng thông báo có dấu x (nếu có)",
+                "desc": "",
+                "value": "x",
+                "success": "",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"後で\" (nếu có)",
+                "desc": "Điểm danh xong có hiện thông báo này",
+                "value": "後で",
+                "success": "",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"条のギフト\" (nếu có)",
+                "desc": "Sụ kiện xuất hiện ngày 06/03/2025",
+                "value": "条のギフト",
+                "success": "67ed2cde1384f859ed81bf97",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"争奪戦を\" (nếu có)",
+                "desc": "Sụ kiện xuất hiện ngày 06/03/2025",
+                "value": "争奪戦を",
+                "success": "67ed2cde1384f859ed81bf97",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"ランキングで勝ち抜く\" (nếu có)",
+                "desc": "Sụ kiện xuất hiện ngày 06/03/2025",
+                "value": "ランキングで勝ち抜く",
+                "success": "67ed2cde1384f859ed81bf97",
+                "failed": ""
+              }
+            ]
+          },
+          "failed": "",
+          "success": "",
+          "order": "2",
+          "_id": "67ed2cde1384f859ed81bfb5"
+        },
+        {
+          "action": 4,
+          "title": "Sang video tiếp theo",
+          "desc": "",
+          "value": [
+            {
+              "x": 0.5,
+              "y": 0.8
+            },
+            {
+              "x": 0.5,
+              "y": 0.2
+            }
+          ],
+          "failed": "",
+          "success": "",
+          "order": "3",
+          "_id": "67ed2cde1384f859ed81bfb6"
+        }
+      ],
+      "repeat": 400,
+      "repeatWhenFailed": 0,
+      "order": "1",
+      "_id": "67ed2cde1384f859ed81bfb3",
+      "__v": 0
+    },
+    "67ed2cde1384f859ed81bfb8": {
+      "title": "Tìm và nhận nhiệm vụ hoặc thưởng",
+      "desc": "",
+      "groupId": "67ed2cde1384f859ed81bf95",
+      "deviceId": "",
+      "steps": [
+        {
+          "action": 1,
+          "title": "",
+          "desc": "",
+          "value": "https://lite.tiktok.com/t/ZS6rUjMPr/",
+          "failed": "",
+          "success": "",
+          "order": "1",
+          "_id": "67ed2cde1384f859ed81bfb9"
+        },
+        {
+          "action": 0,
+          "title": "Đợi mở ứng dụng",
+          "desc": "",
+          "value": 20,
+          "failed": "",
+          "success": "",
+          "order": "2",
+          "_id": "67ed2cde1384f859ed81bfba"
+        },
+        {
+          "action": 5,
+          "title": "Vào trang nhiệm vụ",
+          "desc": "",
+          "value": {
+            "repeat": 20,
+            "swipe": {
+              "action": 4,
+              "title": "Vuốt xuống dưới",
+              "desc": "",
+              "value": [
+                {
+                  "x": 0.5,
+                  "y": 0.6
+                },
+                {
+                  "x": 0.5,
+                  "y": 0.2
+                }
+              ],
+              "failed": "",
+              "success": ""
+            },
+            "keywords": [
+              {
+                "title": "Đóng thông báo có dấu x (nếu có)",
+                "desc": "",
+                "value": "x",
+                "success": "",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"後で\" (nếu có)",
+                "desc": "Điểm danh xong có hiện thông báo này",
+                "value": "後で",
+                "success": "",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"条のギフト\" (nếu có)",
+                "desc": "Sụ kiện xuất hiện ngày 06/03/2025",
+                "value": "条のギフト",
+                "success": "67ed2cde1384f859ed81bf97",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"争奪戦を\" (nếu có)",
+                "desc": "Sụ kiện xuất hiện ngày 06/03/2025",
+                "value": "争奪戦を",
+                "success": "67ed2cde1384f859ed81bf97",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"ランキングで勝ち抜く\" (nếu có)",
+                "desc": "Sụ kiện xuất hiện ngày 06/03/2025",
+                "value": "ランキングで勝ち抜く",
+                "success": "67ed2cde1384f859ed81bf97",
+                "failed": ""
+              },
+              {
+                "title": "Vào trang nhiệm vụ (ギフト)",
+                "desc": "",
+                "value": "ギフト",
+                "success": "67ed2cde1384f859ed81bf9a",
+                "failed": ""
+              },
+              {
+                "title": "Vào trang nhiệm vụ (ギラト)",
+                "desc": "",
+                "value": "ギラト",
+                "success": "67ed2cde1384f859ed81bf9a",
+                "failed": ""
+              }
+            ]
+          },
+          "failed": "break",
+          "success": "",
+          "order": "3",
+          "_id": "67ed2cde1384f859ed81bfbb"
+        },
+        {
+          "action": 5,
+          "title": "Tìm và nhận nhiệm vụ hoặc thưởng",
+          "desc": "",
+          "value": {
+            "repeat": 20,
+            "swipe": {
+              "action": 4,
+              "title": "Vuốt xuống dưới",
+              "desc": "",
+              "value": [
+                {
+                  "x": 0.5,
+                  "y": 0.6
+                },
+                {
+                  "x": 0.5,
+                  "y": 0.2
+                }
+              ],
+              "failed": "",
+              "success": ""
+            },
+            "keywords": [
+              {
+                "title": "Đóng thông báo có dấu x (nếu có)",
+                "desc": "",
+                "value": "x",
+                "success": "",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"後で\" (nếu có)",
+                "desc": "Điểm danh xong có hiện thông báo này",
+                "value": "後で",
+                "success": "",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"条のギフト\" (nếu có)",
+                "desc": "Sụ kiện xuất hiện ngày 06/03/2025",
+                "value": "条のギフト",
+                "success": "67ed2cde1384f859ed81bf97",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"争奪戦を\" (nếu có)",
+                "desc": "Sụ kiện xuất hiện ngày 06/03/2025",
+                "value": "争奪戦を",
+                "success": "67ed2cde1384f859ed81bf97",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"ランキングで勝ち抜く\" (nếu có)",
+                "desc": "Sụ kiện xuất hiện ngày 06/03/2025",
+                "value": "ランキングで勝ち抜く",
+                "success": "67ed2cde1384f859ed81bf97",
+                "failed": ""
+              },
+              {
+                "title": "Nhận thưởng (受け取る)",
+                "desc": "Nhận thưởng 10 lần/ngày (mỗi lần cách nhau 20 phút), thưởng thả tim, thưởng tìm kiếm, thưởng xem quảng cáo,....",
+                "value": "受け取る",
+                "success": "",
+                "failed": ""
+              },
+              {
+                "title": "Điểm danh nhận thưởng (チェックイン)",
+                "desc": "Điểm danh nhận thưởng mỗi ngày. Nhận rồi sẽ đổi thành 通知設定 (Cài đặt thông báo)",
+                "value": "チェックイン",
+                "success": "",
+                "failed": ""
+              },
+              {
+                "title": "[Tiktok] Nhận nhiệm vụ thả tim video (いいね)",
+                "desc": "Nếu tìm thấy thì nhấn vào -> Ticktok sẽ tự động mở sang màn Trang chủ -> Xem video à Thả tim 6 lần -> Lặp lại từ đầu.\nNếu không tìm thấy thì tìm từ khoá tiếp theo.",
+                "value": "いいね",
+                "success": "67ed2cde1384f859ed81bf9d",
+                "failed": ""
+              },
+              {
+                "title": "[Tiktok] Nhận nhiệm vụ tìm kiếm (検索)",
+                "desc": "Nếu tìm thấy thì nhấn vào -> Ticktok sẽ tự động mở sang màn Trang chủ -> Tìm kiếm 6 lần -> Lặp lại từ đầu.\nNếu không tìm thấy thì tìm từ khoá tiếp theo.",
+                "value": "検索",
+                "success": "67ed2cde1384f859ed81bfa4",
+                "failed": ""
+              },
+              {
+                "title": "Cuộn tới cuối trang",
+                "desc": "Thoát khỏi vòng lặp nếu phát hiện đã cuộn tới cuối trang nhiệm vụ",
+                "value": "報酬活動に参加することで、当社の利用規約に同意したこ\nとになります。",
+                "success": "break",
+                "failed": ""
+              }
+            ]
+          },
+          "failed": "break",
+          "success": "",
+          "order": "4",
+          "_id": "67ed2cde1384f859ed81bfbc"
+        }
+      ],
+      "repeat": 10,
+      "repeatWhenFailed": 0,
+      "order": "1",
+      "_id": "67ed2cde1384f859ed81bfb8",
+      "__v": 0
+    },
+    "67ed2cde1384f859ed81bfbe": {
+      "title": "Nhận niệm vụ xem video quảng cáo",
+      "desc": "",
+      "groupId": "67ed2cde1384f859ed81bf95",
+      "deviceId": "",
+      "steps": [
+        {
+          "action": 1,
+          "title": "",
+          "desc": "",
+          "value": "https://lite.tiktok.com/t/ZS6rUjMPr/",
+          "failed": "",
+          "success": "",
+          "order": "1",
+          "_id": "67ed2cde1384f859ed81bfbf"
+        },
+        {
+          "action": 0,
+          "title": "Đợi mở ứng dụng",
+          "desc": "",
+          "value": 20,
+          "failed": "",
+          "success": "",
+          "order": "2",
+          "_id": "67ed2cde1384f859ed81bfc0"
+        },
+        {
+          "action": 5,
+          "title": "Vào trang nhiệm vụ",
+          "desc": "",
+          "value": {
+            "repeat": 20,
+            "swipe": {
+              "action": 4,
+              "title": "Vuốt xuống dưới",
+              "desc": "",
+              "value": [
+                {
+                  "x": 0.5,
+                  "y": 0.6
+                },
+                {
+                  "x": 0.5,
+                  "y": 0.2
+                }
+              ],
+              "failed": "",
+              "success": ""
+            },
+            "keywords": [
+              {
+                "title": "Đóng thông báo có dấu x (nếu có)",
+                "desc": "",
+                "value": "x",
+                "success": "",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"後で\" (nếu có)",
+                "desc": "Điểm danh xong có hiện thông báo này",
+                "value": "後で",
+                "success": "",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"条のギフト\" (nếu có)",
+                "desc": "Sụ kiện xuất hiện ngày 06/03/2025",
+                "value": "条のギフト",
+                "success": "67ed2cde1384f859ed81bf97",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"争奪戦を\" (nếu có)",
+                "desc": "Sụ kiện xuất hiện ngày 06/03/2025",
+                "value": "争奪戦を",
+                "success": "67ed2cde1384f859ed81bf97",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"ランキングで勝ち抜く\" (nếu có)",
+                "desc": "Sụ kiện xuất hiện ngày 06/03/2025",
+                "value": "ランキングで勝ち抜く",
+                "success": "67ed2cde1384f859ed81bf97",
+                "failed": ""
+              },
+              {
+                "title": "Vào trang nhiệm vụ (ギフト)",
+                "desc": "",
+                "value": "ギフト",
+                "success": "67ed2cde1384f859ed81bf9a",
+                "failed": ""
+              },
+              {
+                "title": "Vào trang nhiệm vụ (ギラト)",
+                "desc": "",
+                "value": "ギラト",
+                "success": "67ed2cde1384f859ed81bf9a",
+                "failed": ""
+              }
+            ]
+          },
+          "failed": "break",
+          "success": "",
+          "order": "3",
+          "_id": "67ed2cde1384f859ed81bfc1"
+        },
+        {
+          "action": 5,
+          "title": "Nhận nhiệm vụ Xem quảng cáo (視聴する)",
+          "desc": "",
+          "value": {
+            "repeat": 20,
+            "swipe": {
+              "action": 4,
+              "title": "Vuốt xuống dưới",
+              "desc": "",
+              "value": [
+                {
+                  "x": 0.5,
+                  "y": 0.6
+                },
+                {
+                  "x": 0.5,
+                  "y": 0.2
+                }
+              ],
+              "failed": "",
+              "success": ""
+            },
+            "keywords": [
+              {
+                "title": "Đóng thông báo có dấu x (nếu có)",
+                "desc": "",
+                "value": "x",
+                "success": "",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"後で\" (nếu có)",
+                "desc": "Điểm danh xong có hiện thông báo này",
+                "value": "後で",
+                "success": "",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"条のギフト\" (nếu có)",
+                "desc": "Sụ kiện xuất hiện ngày 06/03/2025",
+                "value": "条のギフト",
+                "success": "67ed2cde1384f859ed81bf97",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"争奪戦を\" (nếu có)",
+                "desc": "Sụ kiện xuất hiện ngày 06/03/2025",
+                "value": "争奪戦を",
+                "success": "67ed2cde1384f859ed81bf97",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"ランキングで勝ち抜く\" (nếu có)",
+                "desc": "Sụ kiện xuất hiện ngày 06/03/2025",
+                "value": "ランキングで勝ち抜く",
+                "success": "67ed2cde1384f859ed81bf97",
+                "failed": ""
+              },
+              {
+                "title": "[Tiktok] Nhận nhiệm vụ Xem quảng cáo (視聴する)",
+                "desc": "Nếu tìm thấy thì nhấn vào -> Ticktok sẽ mở quảng cáo -> Xem và đóng quảng cáo -> Tiếp tục tìm và xem quảng cáo 30 lần -> Lặp lại từ đầu.\nNếu không tìm thấy thì tìm từ khoá tiếp theo.",
+                "value": "視聴する",
+                "success": "67ed2cde1384f859ed81bfad",
+                "failed": ""
+              }
+            ]
+          },
+          "failed": "break",
+          "success": "",
+          "order": "4",
+          "_id": "67ed2cde1384f859ed81bfc2"
+        }
+      ],
+      "repeat": 3,
+      "repeatWhenFailed": 0,
+      "order": "1",
+      "_id": "67ed2cde1384f859ed81bfbe",
+      "__v": 0
+    },
+    "67ed2cde1384f859ed81bfc4": {
+      "title": "Nhận niệm vụ xem video 180 phút",
+      "desc": "",
+      "groupId": "67ed2cde1384f859ed81bf95",
+      "deviceId": "",
+      "steps": [
+        {
+          "action": 1,
+          "title": "",
+          "desc": "",
+          "value": "https://lite.tiktok.com/t/ZS6rUjMPr/",
+          "failed": "",
+          "success": "",
+          "order": "1",
+          "_id": "67ed2cde1384f859ed81bfc5"
+        },
+        {
+          "action": 0,
+          "title": "Đợi mở ứng dụng",
+          "desc": "",
+          "value": 20,
+          "failed": "",
+          "success": "",
+          "order": "2",
+          "_id": "67ed2cde1384f859ed81bfc6"
+        },
+        {
+          "action": 5,
+          "title": "Vào trang nhiệm vụ",
+          "desc": "",
+          "value": {
+            "repeat": 20,
+            "swipe": {
+              "action": 4,
+              "title": "Vuốt xuống dưới",
+              "desc": "",
+              "value": [
+                {
+                  "x": 0.5,
+                  "y": 0.6
+                },
+                {
+                  "x": 0.5,
+                  "y": 0.2
+                }
+              ],
+              "failed": "",
+              "success": ""
+            },
+            "keywords": [
+              {
+                "title": "Đóng thông báo có dấu x (nếu có)",
+                "desc": "",
+                "value": "x",
+                "success": "",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"後で\" (nếu có)",
+                "desc": "Điểm danh xong có hiện thông báo này",
+                "value": "後で",
+                "success": "",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"条のギフト\" (nếu có)",
+                "desc": "Sụ kiện xuất hiện ngày 06/03/2025",
+                "value": "条のギフト",
+                "success": "67ed2cde1384f859ed81bf97",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"争奪戦を\" (nếu có)",
+                "desc": "Sụ kiện xuất hiện ngày 06/03/2025",
+                "value": "争奪戦を",
+                "success": "67ed2cde1384f859ed81bf97",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"ランキングで勝ち抜く\" (nếu có)",
+                "desc": "Sụ kiện xuất hiện ngày 06/03/2025",
+                "value": "ランキングで勝ち抜く",
+                "success": "67ed2cde1384f859ed81bf97",
+                "failed": ""
+              },
+              {
+                "title": "Vào trang nhiệm vụ (ギフト)",
+                "desc": "",
+                "value": "ギフト",
+                "success": "67ed2cde1384f859ed81bf9a",
+                "failed": ""
+              },
+              {
+                "title": "Vào trang nhiệm vụ (ギラト)",
+                "desc": "",
+                "value": "ギラト",
+                "success": "67ed2cde1384f859ed81bf9a",
+                "failed": ""
+              }
+            ]
+          },
+          "failed": "break",
+          "success": "",
+          "order": "3",
+          "_id": "67ed2cde1384f859ed81bfc7"
+        },
+        {
+          "action": 5,
+          "title": "Tìm và nhận nhiệm vụ xem video 180 phút",
+          "desc": "",
+          "value": {
+            "repeat": 20,
+            "swipe": {
+              "action": 4,
+              "title": "Vuốt xuống dưới",
+              "desc": "",
+              "value": [
+                {
+                  "x": 0.5,
+                  "y": 0.6
+                },
+                {
+                  "x": 0.5,
+                  "y": 0.2
+                }
+              ],
+              "failed": "",
+              "success": ""
+            },
+            "keywords": [
+              {
+                "title": "Đóng thông báo có dấu x (nếu có)",
+                "desc": "",
+                "value": "x",
+                "success": "",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"後で\" (nếu có)",
+                "desc": "Điểm danh xong có hiện thông báo này",
+                "value": "後で",
+                "success": "",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"条のギフト\" (nếu có)",
+                "desc": "Sụ kiện xuất hiện ngày 06/03/2025",
+                "value": "条のギフト",
+                "success": "67ed2cde1384f859ed81bf97",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"争奪戦を\" (nếu có)",
+                "desc": "Sụ kiện xuất hiện ngày 06/03/2025",
+                "value": "争奪戦を",
+                "success": "67ed2cde1384f859ed81bf97",
+                "failed": ""
+              },
+              {
+                "title": "Đóng thông báo \"ランキングで勝ち抜く\" (nếu có)",
+                "desc": "Sụ kiện xuất hiện ngày 06/03/2025",
+                "value": "ランキングで勝ち抜く",
+                "success": "67ed2cde1384f859ed81bf97",
+                "failed": ""
+              },
+              {
+                "title": "[Tiktok] Nhận nhiệm vụ xem video 180 phút (動画を見る)",
+                "desc": "Nếu tìm thấy thì nhấn vào -> Ticktok sẽ tự động mở sang màn Trang chủ -> Xem 400 video (tổng 02:13:20) -> Lặp lại từ đầu.\nNếu không tìm thấy thì tìm từ khoá thì lặp lại từ đầu.",
+                "value": "動画を見る",
+                "success": "67ed2cde1384f859ed81bfb3",
+                "failed": ""
+              }
+            ]
+          },
+          "failed": "break",
+          "success": "",
+          "order": "4",
+          "_id": "67ed2cde1384f859ed81bfc8"
+        }
+      ],
+      "repeat": 3,
+      "repeatWhenFailed": 0,
+      "order": "1",
+      "_id": "67ed2cde1384f859ed81bfc4",
+      "__v": 0
+    },
+    "67ed2cde1384f859ed81bfca": {
+      "title": "[Tiktok] Làm tất cả nhiệm vụ hàng ngày",
+      "desc": "6 nghiệm vụ hàng ngày trên tiktok",
+      "groupId": "67ed2cde1384f859ed81bf95",
+      "deviceId": "",
+      "steps": [
+        {
+          "action": 0,
+          "title": "Tìm và nhận nhiệm vụ hoặc thưởng",
+          "desc": "",
+          "value": 1,
+          "failed": "",
+          "success": "67ed2cde1384f859ed81bfb8",
+          "order": "1",
+          "_id": "67ed2cde1384f859ed81bfcb"
+        },
+        {
+          "action": 0,
+          "title": "Nhận niệm vụ xem video quảng cáo",
+          "desc": "",
+          "value": 1,
+          "failed": "",
+          "success": "67ed2cde1384f859ed81bfbe",
+          "order": "2",
+          "_id": "67ed2cde1384f859ed81bfcc"
+        },
+        {
+          "action": 0,
+          "title": "Nhận niệm vụ xem video 180 phút",
+          "desc": "",
+          "value": 1,
+          "failed": "",
+          "success": "67ed2cde1384f859ed81bfc4",
+          "order": "3",
+          "_id": "67ed2cde1384f859ed81bfcd"
+        }
+      ],
+      "repeat": 1,
+      "repeatWhenFailed": 0,
+      "order": "1",
+      "_id": "67ed2cde1384f859ed81bfca",
+      "__v": 0
+    }
+  },
+  "data": {
+    "keywords": [
+      "車8765",
+      "観光9548",
+      "ギター3624",
+      "ドラマ9761",
+      "語学4219",
+      "単語3315",
+      "語学6234",
+      "デザイン8374",
+      "生物2902",
+      "服5003",
+      "戦国時代7365",
+      "家庭教師8266",
+      "睡眠2214",
+      "戦国時代5620",
+      "レシピ8385",
+      "ネットフリックス6648",
+      "キャラクター6273",
+      "筋トレ5667",
+      "マンション1331",
+      "ブランド5254",
+      "土地3478",
+      "トヨタ2634",
+      "宇宙4846",
+      "ホンダ3762",
+      "アクション1785",
+      "節約8999",
+      "eスポーツ3590",
+      "RPG304",
+      "フランス語804",
+      "住宅ローン9453",
+      "ロボット2807",
+      "語学5991",
+      "ストーリー3357",
+      "服8189",
+      "アニメ6010",
+      "銀行6978",
+      "遺跡802",
+      "オープニング1631",
+      "アートギャラリー2500",
+      "航空券8068",
+      "ドラマ5489",
+      "宇宙人6489",
+      "宇宙6337",
+      "キャラクター794",
+      "ドラマ3085",
+      "物件1642",
+      "瞑想8219",
+      "古代文明634",
+      "マンション9071",
+      "ギター2386"
+    ]
+  }
+}
