@@ -1,0 +1,7 @@
+
+
+// Ktra .npm cache path
+npm config get cache
+
+// Set .npm cache path
+npm config set cache "/Volumes/SSD_Remove/.cache/.npm"
